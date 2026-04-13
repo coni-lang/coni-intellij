@@ -1,0 +1,79 @@
+<application>
+  <component name="ActionsLocalSummary">
+    <e n="$Undo">
+      <i c="5" l="1775719871410" />
+    </e>
+    <e n="EditorBackSpace">
+      <i c="2" l="1775719835257" />
+    </e>
+    <e n="EditorCompleteStatement">
+      <i c="1" l="1775719497606" />
+    </e>
+    <e n="EditorDown">
+      <i c="56" l="1775719870678" />
+    </e>
+    <e n="EditorDownWithSelection">
+      <i c="14" l="1775719840705" />
+    </e>
+    <e n="EditorLeft">
+      <i c="6" l="1775719869849" />
+    </e>
+    <e n="EditorLineEnd">
+      <i c="4" l="1775719867033" />
+    </e>
+    <e n="EditorLineEndWithSelection">
+      <i c="2" l="1775719868690" />
+    </e>
+    <e n="EditorLineStart">
+      <i c="2" l="1775719867577" />
+    </e>
+    <e n="EditorLineStartWithSelection">
+      <i c="3" l="1775719862822" />
+    </e>
+    <e n="EditorPreviousWord">
+      <i c="4" l="1775719865465" />
+    </e>
+    <e n="EditorPreviousWordWithSelection">
+      <i c="1" l="1775719866026" />
+    </e>
+    <e n="EditorRight">
+      <i c="2" l="1775719864537" />
+    </e>
+    <e n="EditorSplitLine">
+      <i c="1" l="1775718918164" />
+    </e>
+    <e n="EditorStartNewLineBefore">
+      <i c="1" l="1775718931307" />
+    </e>
+    <e n="EditorUp">
+      <i c="39" l="1775719849505" />
+    </e>
+    <e n="EditorUpWithSelection">
+      <i c="6" l="1775719814823" />
+    </e>
+    <e n="Generate">
+      <i c="5" l="1775719674979" />
+    </e>
+    <e n="RecentLocations">
+      <i c="2" l="1775719501732" />
+    </e>
+    <e n="ShowIntentionActions">
+      <i c="1" l="1775718917005" />
+    </e>
+    <e n="Stop">
+      <i c="1" l="1775718624056" />
+    </e>
+    <e n="WelcomeScreen.OpenProject">
+      <i c="2" l="1775718219134" />
+    </e>
+    <e n="com.intellij.ide.plugins.DynamicPluginVfsListener$prepareChange$2$afterVfsChange$1$1">
+      <i c="1" l="1775718239823" />
+    </e>
+    <e n="com.intellij.openapi.fileEditor.impl.tabActions.CloseTab">
+      <i c="2" l="1775719872570" />
+    </e>
+    <e n="com.intellij.openapi.keymap.impl.ui.KeymapPanel$AddKeyboardShortcutAction">
+      <i c="2" l="1775719786109" />
+    </e>
+  </component>
+</application>

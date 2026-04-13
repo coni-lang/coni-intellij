@@ -1,0 +1,41 @@
+<application>
+  <component name="RecentProjectsManager">
+    <option name="additionalInfo">
+      <map>
+        <entry key="$USER_HOME$/cool/s5/coni-lang-gitea/wasm-apps/basic">
+          <value>
+            <RecentProjectMetaInfo frameTitle="basic – counter.coni" projectWorkspaceId="3C6tsH2FoiQN1LXCSkoJVFkgcOd">
+              <option name="activationTimestamp" value="1775718205612" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="IC-232.10227.8" />
+              <option name="buildTimestamp" value="1699506010672" />
+              <option name="colorInfo">
+                <RecentProjectColorInfo associatedIndex="2" />
+              </option>
+              <frame x="35" y="53" width="1400" height="826" />
+              <option name="productionCode" value="IC" />
+              <option name="projectOpenTimestamp" value="1775718053992" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/cool/coni-lang">
+          <value>
+            <RecentProjectMetaInfo frameTitle="coni-lang – README.md" projectWorkspaceId="3C6uEAc3zEYa9E2d3Hf10Yrrg7u">
+              <option name="activationTimestamp" value="1775719757849" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="IC-232.10227.8" />
+              <option name="buildTimestamp" value="1699506010672" />
+              <option name="colorInfo">
+                <RecentProjectColorInfo associatedIndex="3" />
+              </option>
+              <frame x="35" y="53" width="1400" height="826" />
+              <option name="productionCode" value="IC" />
+              <option name="projectOpenTimestamp" value="1775718227546" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="lastOpenedProject" value="$USER_HOME$/cool/coni-lang" />
+  </component>
+</application>

@@ -1,0 +1,37 @@
+package org.conilang.actions
+
+import com.intellij.openapi.actionSystem.AnAction
+import com.intellij.openapi.actionSystem.AnActionEvent
+import com.intellij.openapi.actionSystem.CommonDataKeys
+import com.intellij.execution.process.ProcessTerminatedListener
+import com.intellij.execution.ui.RunContentDescriptor
+import com.intellij.execution.ui.RunContentManager
+import com.intellij.execution.executors.DefaultRunExecutor
+import com.intellij.execution.process.ProcessHandlerFactory
+import com.intellij.execution.filters.TextConsoleBuilderFactory
+
+class StartREPLAction : AnAction("Start Coni REPL") {
+    override fun actionPerformed(e: AnActionEvent) {
+        val project = e.project ?: return
+        
+        val commandLine = com.intellij.execution.configurations.GeneralCommandLine("coni", "repl")
+        commandLine.workDirectory = java.io.File(project.basePath ?: "/")
+
+        try {
+            val processHandler = ProcessHandlerFactory.getInstance().createColoredProcessHandler(commandLine)
+            ProcessTerminatedListener.attach(processHandler)
+
+            val consoleBuilder = TextConsoleBuilderFactory.getInstance().createBuilder(project)
+            val consoleView = consoleBuilder.console
+            consoleView.attachToProcess(processHandler)
+
+            val executor = DefaultRunExecutor.getRunExecutorInstance()
+            val descriptor = RunContentDescriptor(consoleView, processHandler, consoleView.component, "Coni REPL")
+            RunContentManager.getInstance(project).showRunContent(executor, descriptor)
+
+            processHandler.startNotify()
+        } catch (ex: Exception) {
+            ex.printStackTrace()
+        }
+    }
+}

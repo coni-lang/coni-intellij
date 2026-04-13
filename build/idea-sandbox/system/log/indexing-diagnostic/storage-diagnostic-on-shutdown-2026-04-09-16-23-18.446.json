@@ -1,0 +1,372 @@
+{
+  "pageCacheStats" : {
+    "cachedChannelsStatistics" : {
+      "hit" : 44,
+      "miss" : 0,
+      "load" : 119,
+      "capacity" : 400
+    },
+    "uncachedFileAccess" : 185,
+    "maxRegisteredFiles" : 651,
+    "maxCacheSizeInBytes" : 302055424,
+    "totalCachedSizeInBytes" : 51445760,
+    "pageHits" : 70,
+    "pageFastCacheHits" : 62309,
+    "pageLoadsAboveSizeThreshold" : 0,
+    "regularPageLoads" : 309,
+    "disposedBuffers" : 261,
+    "totalPageDisposalUs" : 948,
+    "totalPageLoadUs" : 288870,
+    "totalPagesLoaded" : 309,
+    "capacityInBytes" : 524288000
+  },
+  "vfsStorageStats" : {
+    "statsPerEnumerator" : {
+      "contentHashes.dat" : {
+        "collisions" : 0,
+        "values" : 32,
+        "dataFileSizeInBytes" : 640,
+        "storageSizeInBytes" : 96,
+        "btreeStatistics" : {
+          "pages" : 1,
+          "elements" : 32,
+          "height" : 1,
+          "moves" : 0,
+          "leafPages" : 1,
+          "maxSearchStepsInRequest" : 0,
+          "searchRequests" : 82,
+          "searchSteps" : 0,
+          "pageCapacity" : 32768,
+          "sizeInBytes" : 32768
+        }
+      },
+      "names.dat" : {
+        "collisions" : 2,
+        "values" : 52066,
+        "dataFileSizeInBytes" : 1662496,
+        "storageSizeInBytes" : 144,
+        "btreeStatistics" : {
+          "pages" : 17,
+          "elements" : 52064,
+          "height" : 2,
+          "moves" : 61,
+          "leafPages" : 16,
+          "maxSearchStepsInRequest" : 64,
+          "searchRequests" : 174650,
+          "searchSteps" : 275399,
+          "pageCapacity" : 32768,
+          "sizeInBytes" : 557056
+        }
+      }
+    }
+  },
+  "indexStorageStats" : {
+    "indexStoragesStats" : { }
+  },
+  "otherStorageStats" : {
+    "statsPerPhm" : {
+      "$USER_HOME$/cool/s5/coni-lang-gitea/intellij-coni/build/idea-sandbox/system/frameworks/detection/coni-lang.dfe59940/files" : {
+        "persistentEnumeratorStatistics" : {
+          "collisions" : 0,
+          "values" : 0,
+          "dataFileSizeInBytes" : 0,
+          "storageSizeInBytes" : 96,
+          "btreeStatistics" : {
+            "pages" : 0,
+            "elements" : 0,
+            "height" : 0,
+            "moves" : 0,
+            "leafPages" : 1,
+            "maxSearchStepsInRequest" : 0,
+            "searchRequests" : 0,
+            "searchSteps" : 0,
+            "pageCapacity" : 32768,
+            "sizeInBytes" : 0
+          }
+        },
+        "valueStorageSizeInBytes" : 0
+      },
+      "$USER_HOME$/cool/s5/coni-lang-gitea/intellij-coni/build/idea-sandbox/system/vcs-log/coni-la_dfe59940_d8213478/index/committers.27" : {
+        "persistentEnumeratorStatistics" : {
+          "collisions" : 0,
+          "values" : 0,
+          "dataFileSizeInBytes" : -1,
+          "storageSizeInBytes" : 96,
+          "btreeStatistics" : {
+            "pages" : 0,
+            "elements" : 0,
+            "height" : 0,
+            "moves" : 0,
+            "leafPages" : 1,
+            "maxSearchStepsInRequest" : 0,
+            "searchRequests" : 0,
+            "searchSteps" : 0,
+            "pageCapacity" : 32768,
+            "sizeInBytes" : 0
+          }
+        },
+        "valueStorageSizeInBytes" : 0
+      },
+      "$USER_HOME$/cool/s5/coni-lang-gitea/intellij-coni/build/idea-sandbox/system/vcs-log/coni-la_dfe59940_d8213478/index/messages.27" : {
+        "persistentEnumeratorStatistics" : {
+          "collisions" : 0,
+          "values" : 0,
+          "dataFileSizeInBytes" : -1,
+          "storageSizeInBytes" : 96,
+          "btreeStatistics" : {
+            "pages" : 1,
+            "elements" : 937,
+            "height" : 1,
+            "moves" : 0,
+            "leafPages" : 1,
+            "maxSearchStepsInRequest" : 0,
+            "searchRequests" : 4872,
+            "searchSteps" : 0,
+            "pageCapacity" : 32768,
+            "sizeInBytes" : 32768
+          }
+        },
+        "valueStorageSizeInBytes" : 48517
+      },
+      "$USER_HOME$/cool/s5/coni-lang-gitea/intellij-coni/build/idea-sandbox/system/vcs-log/coni-la_dfe59940_d8213478/index/parents.27" : {
+        "persistentEnumeratorStatistics" : {
+          "collisions" : 0,
+          "values" : 0,
+          "dataFileSizeInBytes" : -1,
+          "storageSizeInBytes" : 96,
+          "btreeStatistics" : {
+            "pages" : 1,
+            "elements" : 937,
+            "height" : 1,
+            "moves" : 0,
+            "leafPages" : 1,
+            "maxSearchStepsInRequest" : 0,
+            "searchRequests" : 5152,
+            "searchSteps" : 0,
+            "pageCapacity" : 32768,
+            "sizeInBytes" : 32768
+          }
+        },
+        "valueStorageSizeInBytes" : 6640
+      },
+      "$USER_HOME$/cool/s5/coni-lang-gitea/intellij-coni/build/idea-sandbox/system/vcs-log/coni-la_dfe59940_d8213478/index/paths.27.storage" : {
+        "persistentEnumeratorStatistics" : {
+          "collisions" : 0,
+          "values" : 0,
+          "dataFileSizeInBytes" : -1,
+          "storageSizeInBytes" : 96,
+          "btreeStatistics" : {
+            "pages" : 1,
+            "elements" : 2291,
+            "height" : 1,
+            "moves" : 0,
+            "leafPages" : 1,
+            "maxSearchStepsInRequest" : 13,
+            "searchRequests" : 4750,
+            "searchSteps" : 3408,
+            "pageCapacity" : 32768,
+            "sizeInBytes" : 32768
+          }
+        },
+        "valueStorageSizeInBytes" : 45602
+      },
+      "$USER_HOME$/cool/s5/coni-lang-gitea/intellij-coni/build/idea-sandbox/system/vcs-log/coni-la_dfe59940_d8213478/index/renames-map.27" : {
+        "persistentEnumeratorStatistics" : {
+          "collisions" : 0,
+          "values" : 34,
+          "dataFileSizeInBytes" : 272,
+          "storageSizeInBytes" : 400,
+          "btreeStatistics" : {
+            "pages" : 1,
+            "elements" : 34,
+            "height" : 1,
+            "moves" : 0,
+            "leafPages" : 1,
+            "maxSearchStepsInRequest" : 0,
+            "searchRequests" : 406,
+            "searchSteps" : 0,
+            "pageCapacity" : 32768,
+            "sizeInBytes" : 32768
+          }
+        },
+        "valueStorageSizeInBytes" : 6482
+      },
+      "$USER_HOME$/cool/s5/coni-lang-gitea/intellij-coni/build/idea-sandbox/system/vcs-log/coni-la_dfe59940_d8213478/index/timestamps.27" : {
+        "persistentEnumeratorStatistics" : {
+          "collisions" : 0,
+          "values" : 0,
+          "dataFileSizeInBytes" : -1,
+          "storageSizeInBytes" : 96,
+          "btreeStatistics" : {
+            "pages" : 1,
+            "elements" : 937,
+            "height" : 1,
+            "moves" : 0,
+            "leafPages" : 1,
+            "maxSearchStepsInRequest" : 0,
+            "searchRequests" : 1945,
+            "searchSteps" : 0,
+            "pageCapacity" : 32768,
+            "sizeInBytes" : 32768
+          }
+        },
+        "valueStorageSizeInBytes" : 16915
+      },
+      "$USER_HOME$/cool/s5/coni-lang-gitea/intellij-coni/build/idea-sandbox/system/vcs-log/coni-la_dfe59940_d8213478/index/trigrams.27.storage" : {
+        "persistentEnumeratorStatistics" : {
+          "collisions" : 0,
+          "values" : 0,
+          "dataFileSizeInBytes" : -1,
+          "storageSizeInBytes" : 96,
+          "btreeStatistics" : {
+            "pages" : 1,
+            "elements" : 2168,
+            "height" : 1,
+            "moves" : 0,
+            "leafPages" : 1,
+            "maxSearchStepsInRequest" : 11,
+            "searchRequests" : 4804,
+            "searchSteps" : 3002,
+            "pageCapacity" : 32768,
+            "sizeInBytes" : 32768
+          }
+        },
+        "valueStorageSizeInBytes" : 59289
+      },
+      "$USER_HOME$/cool/s5/coni-lang-gitea/intellij-coni/build/idea-sandbox/system/vcs-log/coni-la_dfe59940_d8213478/index/users.27.storage" : {
+        "persistentEnumeratorStatistics" : {
+          "collisions" : 0,
+          "values" : 0,
+          "dataFileSizeInBytes" : -1,
+          "storageSizeInBytes" : 96,
+          "btreeStatistics" : {
+            "pages" : 1,
+            "elements" : 2,
+            "height" : 1,
+            "moves" : 0,
+            "leafPages" : 1,
+            "maxSearchStepsInRequest" : 0,
+            "searchRequests" : 9,
+            "searchSteps" : 0,
+            "pageCapacity" : 32768,
+            "sizeInBytes" : 32768
+          }
+        },
+        "valueStorageSizeInBytes" : 1956
+      },
+      "$USER_HOME$/cool/s5/coni-lang-gitea/intellij-coni/build/idea-sandbox/system/vcs-log/coni-la_dfe59940_d8213478/index/users.idx.27" : {
+        "persistentEnumeratorStatistics" : {
+          "collisions" : 0,
+          "values" : 0,
+          "dataFileSizeInBytes" : -1,
+          "storageSizeInBytes" : 96,
+          "btreeStatistics" : {
+            "pages" : 1,
+            "elements" : 937,
+            "height" : 1,
+            "moves" : 0,
+            "leafPages" : 1,
+            "maxSearchStepsInRequest" : 0,
+            "searchRequests" : 2881,
+            "searchSteps" : 0,
+            "pageCapacity" : 32768,
+            "sizeInBytes" : 32768
+          }
+        },
+        "valueStorageSizeInBytes" : 6608
+      }
+    },
+    "statsPerEnumerator" : {
+      "$USER_HOME$/cool/s5/coni-lang-gitea/intellij-coni/build/idea-sandbox/system/vcs-log/coni-la_dfe59940_d8213478/hashes/storage.8" : {
+        "collisions" : 0,
+        "values" : 937,
+        "dataFileSizeInBytes" : 24362,
+        "storageSizeInBytes" : 96,
+        "btreeStatistics" : {
+          "pages" : 1,
+          "elements" : 937,
+          "height" : 1,
+          "moves" : 0,
+          "leafPages" : 1,
+          "maxSearchStepsInRequest" : 3,
+          "searchRequests" : 10748,
+          "searchSteps" : 1331,
+          "pageCapacity" : 32768,
+          "sizeInBytes" : 32768
+        }
+      },
+      "$USER_HOME$/cool/s5/coni-lang-gitea/intellij-coni/build/idea-sandbox/system/vcs-log/coni-la_dfe59940_d8213478/index/paths-ids.27" : {
+        "collisions" : 0,
+        "values" : 2291,
+        "dataFileSizeInBytes" : 83685,
+        "storageSizeInBytes" : 96,
+        "btreeStatistics" : {
+          "pages" : 1,
+          "elements" : 2291,
+          "height" : 1,
+          "moves" : 0,
+          "leafPages" : 1,
+          "maxSearchStepsInRequest" : 10,
+          "searchRequests" : 16531,
+          "searchSteps" : 3983,
+          "pageCapacity" : 32768,
+          "sizeInBytes" : 32768
+        }
+      },
+      "$USER_HOME$/cool/s5/coni-lang-gitea/intellij-coni/build/idea-sandbox/system/vcs-log/coni-la_dfe59940_d8213478/index/users-ids.27" : {
+        "collisions" : 0,
+        "values" : 2,
+        "dataFileSizeInBytes" : 63,
+        "storageSizeInBytes" : 96,
+        "btreeStatistics" : {
+          "pages" : 1,
+          "elements" : 2,
+          "height" : 1,
+          "moves" : 0,
+          "leafPages" : 1,
+          "maxSearchStepsInRequest" : 0,
+          "searchRequests" : 974,
+          "searchSteps" : 0,
+          "pageCapacity" : 32768,
+          "sizeInBytes" : 32768
+        }
+      },
+      "$USER_HOME$/cool/s5/coni-lang-gitea/intellij-coni/build/idea-sandbox/system/vcs-log/coni-la_dfe59940_d8213478/refs/storage.10" : {
+        "collisions" : 0,
+        "values" : 0,
+        "dataFileSizeInBytes" : 0,
+        "storageSizeInBytes" : 96,
+        "btreeStatistics" : {
+          "pages" : 0,
+          "elements" : 0,
+          "height" : 0,
+          "moves" : 0,
+          "leafPages" : 1,
+          "maxSearchStepsInRequest" : 0,
+          "searchRequests" : 0,
+          "searchSteps" : 0,
+          "pageCapacity" : 32768,
+          "sizeInBytes" : 0
+        }
+      },
+      "$USER_HOME$/cool/s5/coni-lang-gitea/intellij-coni/build/idea-sandbox/system/vcs-users/dfe59940.2" : {
+        "collisions" : 0,
+        "values" : 2,
+        "dataFileSizeInBytes" : 63,
+        "storageSizeInBytes" : 96,
+        "btreeStatistics" : {
+          "pages" : 1,
+          "elements" : 2,
+          "height" : 1,
+          "moves" : 0,
+          "leafPages" : 1,
+          "maxSearchStepsInRequest" : 0,
+          "searchRequests" : 1892,
+          "searchSteps" : 0,
+          "pageCapacity" : 32768,
+          "sizeInBytes" : 32768
+        }
+      }
+    }
+  }
+}

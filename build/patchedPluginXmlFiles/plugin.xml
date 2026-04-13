@@ -1,0 +1,38 @@
+<idea-plugin>
+  <version>0.0.1</version>
+  <idea-version since-build="232" until-build="242.*" />
+  <id>org.conilang.intellij</id>
+  <name>Coni Language</name>
+  <vendor email="nico@conilang.org" url="https://conilang.org">Coni Lang</vendor>
+  <description><![CDATA[IntelliJ IDEA plugin providing support for the Coni programming language.]]></description>
+  <!-- Please see https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html
+         on how to target different products -->
+  <depends>com.intellij.modules.platform</depends>
+  <extensions defaultExtensionNs="com.intellij">
+    <fileType name="Coni File" implementationClass="org.conilang.ConiFileType" fieldName="INSTANCE" language="Coni" extensions="coni" />
+    <lang.syntaxHighlighterFactory language="Coni" implementationClass="org.conilang.highlighting.ConiSyntaxHighlighterFactory" />
+    <lang.parserDefinition language="Coni" implementationClass="org.conilang.ConiParserDefinition" />
+    <lang.psiStructureViewFactory language="Coni" implementationClass="org.conilang.structure.ConiStructureViewFactory" />
+  </extensions>
+  <actions>
+    <action id="org.conilang.actions.RunScriptAction" class="org.conilang.actions.RunScriptAction" text="Run Coni Script" description="Run the selected Coni script file">
+      <add-to-group group-id="EditorPopupMenu" anchor="last" />
+      <add-to-group group-id="ProjectViewPopupMenu" anchor="last" />
+      <keyboard-shortcut keymap="$default" first-keystroke="shift ctrl R" />
+    </action>
+    <action id="org.conilang.actions.StartREPLAction" class="org.conilang.actions.StartREPLAction" text="Start Coni REPL" description="Start a local REPL session">
+      <add-to-group group-id="EditorPopupMenu" anchor="last" />
+      <add-to-group group-id="ToolsMenu" anchor="last" />
+    </action>
+    <action id="org.conilang.actions.EvaluateSelectionAction" class="org.conilang.actions.EvaluateSelectionAction" text="Evaluate Selection in REPL" description="Evaluate the selected text block inside the running REPL server">
+      <add-to-group group-id="EditorPopupMenu" anchor="last" />
+      <keyboard-shortcut keymap="Mac OS X" first-keystroke="meta alt E" />
+      <keyboard-shortcut keymap="Mac OS X 10.5+" first-keystroke="meta alt E" />
+      <keyboard-shortcut keymap="$default" first-keystroke="ctrl alt E" />
+    </action>
+    <action id="org.conilang.actions.ServeDevAction" class="org.conilang.actions.ServeDevAction" text="Serve Coni Playground (Dev)" description="Start a live local playground server">
+      <add-to-group group-id="EditorPopupMenu" anchor="last" />
+      <add-to-group group-id="ProjectViewPopupMenu" anchor="last" />
+    </action>
+  </actions>
+</idea-plugin>

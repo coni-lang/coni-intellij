@@ -1,0 +1,19 @@
+<keymap version="1" name="macOS copy" parent="Mac OS X 10.5+">
+  <action id="Console.Execute.Multiline" />
+  <action id="Console.SplitLine" />
+  <action id="DirDiffMenu.SynchronizeDiff.All" />
+  <action id="EditorCompleteStatement" />
+  <action id="EditorSplitLine" />
+  <action id="KotlinShellExecute" />
+  <action id="SplitChooser.Duplicate" />
+  <action id="Terminal.SmartCommandExecution.Debug" />
+  <action id="Terminal.SmartCommandExecution.Run" />
+  <action id="ViewSource" />
+  <action id="org.conilang.actions.EvaluateSelectionAction">
+    <keyboard-shortcut first-keystroke="ctrl enter" />
+    <keyboard-shortcut first-keystroke="meta enter" />
+  </action>
+  <action id="org.conilang.actions.StartREPLAction">
+    <keyboard-shortcut first-keystroke="shift meta enter" />
+  </action>
+</keymap>
