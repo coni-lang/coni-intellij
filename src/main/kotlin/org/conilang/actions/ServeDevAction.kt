@@ -16,7 +16,7 @@ class ServeDevAction : AnAction("Serve Coni Playground (Dev)") {
         val virtualFile = e.getData(CommonDataKeys.VIRTUAL_FILE)
         val dir = virtualFile?.parent?.path ?: project.basePath ?: "/"
         
-        val commandLine = com.intellij.execution.configurations.GeneralCommandLine("coni", "serve", "--dev", dir, "8080")
+        val commandLine = com.intellij.execution.configurations.GeneralCommandLine("coni", "playground")
         commandLine.workDirectory = java.io.File(dir)
 
         try {
@@ -33,8 +33,8 @@ class ServeDevAction : AnAction("Serve Coni Playground (Dev)") {
 
             processHandler.startNotify()
             
-            // Optionally open the browser automatically to localhost:8080
-            // com.intellij.ide.BrowserUtil.browse("http://localhost:8080")
+            // Optionally open the browser automatically to localhost:8081
+            com.intellij.ide.BrowserUtil.browse("http://localhost:8081")
         } catch (ex: Exception) {
             ex.printStackTrace()
         }

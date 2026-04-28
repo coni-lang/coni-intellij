@@ -1,5 +1,5 @@
 <idea-plugin>
-    <id>org.conilang.intellij</id>
+    <id>org.conilang</id>
     <name>Coni Language</name>
     <vendor email="nico@conilang.org" url="https://conilang.org">Coni Lang</vendor>
 
