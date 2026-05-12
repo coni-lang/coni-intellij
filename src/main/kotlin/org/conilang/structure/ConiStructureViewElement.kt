@@ -35,8 +35,16 @@ class ConiStructureViewElement(private val myElement: PsiElement) : StructureVie
             val children = mutableListOf<TreeElement>()
             var i = 0
             val siblings = myElement.children
+            
+            var depth = 0
+            var currentParent: ConiDefElement? = null
+            var parentDepth = 0
+
             while (i < siblings.size) {
-                if (siblings[i].node.elementType == ConiTypes.LPAREN) {
+                val node = siblings[i].node
+                val type = node.elementType
+
+                if (type == ConiTypes.LPAREN) {
                     var j = i + 1
                     while (j < siblings.size && siblings[j].node.elementType == TokenType.WHITE_SPACE) j++
                     if (j < siblings.size) {
@@ -49,13 +57,33 @@ class ConiStructureViewElement(private val myElement: PsiElement) : StructureVie
                                 if (k < siblings.size) {
                                     val idNode = siblings[k]
                                     if (idNode.node.elementType == ConiTypes.IDENTIFIER) {
-                                        children.add(ConiDefElement(idNode, kwText))
+                                        val defElem = ConiDefElement(idNode, kwText)
+                                        children.add(defElem)
+                                        
+                                        if (kwText == "defrecord" || kwText == "defprotocol") {
+                                            currentParent = defElem
+                                            parentDepth = depth
+                                        }
                                     }
                                 }
                             }
+                        } else if (currentParent != null && depth == parentDepth + 1 && keywordNode.node.elementType == ConiTypes.IDENTIFIER) {
+                            val methodElem = ConiDefElement(keywordNode, "method")
+                            currentParent.addChild(methodElem)
                         }
                     }
                 }
+
+                if (type == ConiTypes.LPAREN || type == ConiTypes.LBRACKET || type == ConiTypes.LBRACE) {
+                    depth++
+                } else if (type == ConiTypes.RPAREN || type == ConiTypes.RBRACKET || type == ConiTypes.RBRACE) {
+                    depth--
+                }
+                
+                if (currentParent != null && depth <= parentDepth) {
+                    currentParent = null
+                }
+
                 i++
             }
             return children.toTypedArray()
