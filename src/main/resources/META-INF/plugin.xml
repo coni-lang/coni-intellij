@@ -16,6 +16,7 @@
         <lang.syntaxHighlighterFactory language="Coni" implementationClass="org.conilang.highlighting.ConiSyntaxHighlighterFactory"/>
         <lang.parserDefinition language="Coni" implementationClass="org.conilang.ConiParserDefinition"/>
         <lang.psiStructureViewFactory language="Coni" implementationClass="org.conilang.structure.ConiStructureViewFactory"/>
+        <preFormatProcessor implementation="org.conilang.format.EdnPreFormatProcessor"/>
     </extensions>
 
     <actions>
