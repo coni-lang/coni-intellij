@@ -6,7 +6,7 @@ plugins {
 }
 
 group = "org.conilang"
-version = "0.0.44"
+version = "0.0.45"
 
 repositories {
     mavenCentral()
@@ -30,6 +30,7 @@ tasks {
 
     patchPluginXml {
         sinceBuild.set("232")
+        untilBuild.set("")
     }
 
     generateLexer {
