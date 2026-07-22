@@ -5,6 +5,9 @@
 
     <description><![CDATA[
       IntelliJ IDEA plugin providing support for the Coni programming language.
+      <br><br>
+      <b>Note:</b> This plugin requires the Coni toolchain to be installed and available in your system PATH. 
+      Downloads are available at <a href="https://coni-lang.org/downloads">https://coni-lang.org/downloads</a>.
     ]]></description>
 
     <!-- Please see https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html
@@ -18,6 +21,9 @@
         <lang.psiStructureViewFactory language="Coni" implementationClass="org.conilang.structure.ConiStructureViewFactory"/>
         <preFormatProcessor implementation="org.conilang.format.EdnPreFormatProcessor"/>
         <gotoDeclarationHandler implementation="org.conilang.navigation.ConiGotoDeclarationHandler"/>
+        
+        <postStartupActivity implementation="org.conilang.ConiStartupActivity"/>
+        <notificationGroup id="Coni Notifications" displayType="BALLOON" key="notification.group.coni"/>
     </extensions>
 
     <actions>
@@ -42,6 +48,10 @@
         <action id="org.conilang.actions.ServeDevAction" class="org.conilang.actions.ServeDevAction" text="Serve Coni Playground (Dev)" description="Start a live local playground server">
             <add-to-group group-id="EditorPopupMenu" anchor="last"/>
             <add-to-group group-id="ProjectViewPopupMenu" anchor="last"/>
+        </action>
+
+        <action id="org.conilang.actions.DownloadConiAction" class="org.conilang.actions.DownloadConiAction" text="Download Coni Toolchain" description="Downloads and sets up the Coni language server">
+            <add-to-group group-id="ToolsMenu" anchor="last"/>
         </action>
     </actions>
 </idea-plugin>

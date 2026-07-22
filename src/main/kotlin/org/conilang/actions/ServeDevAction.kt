@@ -9,6 +9,9 @@ import com.intellij.execution.ui.RunContentManager
 import com.intellij.execution.executors.DefaultRunExecutor
 import com.intellij.execution.process.ProcessHandlerFactory
 import com.intellij.execution.filters.TextConsoleBuilderFactory
+import com.intellij.openapi.ui.Messages
+import org.conilang.util.ConiExecutable
+import org.conilang.util.ConiDownloader
 
 class ServeDevAction : AnAction("Serve Coni Playground (Dev)") {
     override fun actionPerformed(e: AnActionEvent) {
@@ -16,7 +19,8 @@ class ServeDevAction : AnAction("Serve Coni Playground (Dev)") {
         val virtualFile = e.getData(CommonDataKeys.VIRTUAL_FILE)
         val dir = virtualFile?.parent?.path ?: project.basePath ?: "/"
         
-        val commandLine = com.intellij.execution.configurations.GeneralCommandLine("coni", "playground")
+        val coniExe = ConiExecutable.resolve(project)
+        val commandLine = com.intellij.execution.configurations.GeneralCommandLine(coniExe, "playground")
         commandLine.workDirectory = java.io.File(dir)
 
         try {
@@ -36,7 +40,17 @@ class ServeDevAction : AnAction("Serve Coni Playground (Dev)") {
             // Optionally open the browser automatically to localhost:8081
             com.intellij.ide.BrowserUtil.browse("http://localhost:8081")
         } catch (ex: Exception) {
-            ex.printStackTrace()
+            val res = Messages.showYesNoDialog(
+                project,
+                "Failed to execute Coni: ${ex.message}\n\nWould you like to download the Coni language server?",
+                "Execution Failed",
+                "Download",
+                "Cancel",
+                Messages.getErrorIcon()
+            )
+            if (res == Messages.YES) {
+                ConiDownloader.downloadBinary(project)
+            }
         }
     }
 

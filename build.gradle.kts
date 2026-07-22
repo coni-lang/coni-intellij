@@ -6,7 +6,7 @@ plugins {
 }
 
 group = "org.conilang"
-version = "0.0.45"
+version = "0.0.47"
 
 repositories {
     mavenCentral()

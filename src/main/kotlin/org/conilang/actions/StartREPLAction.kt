@@ -9,12 +9,16 @@ import com.intellij.execution.ui.RunContentManager
 import com.intellij.execution.executors.DefaultRunExecutor
 import com.intellij.execution.process.ProcessHandlerFactory
 import com.intellij.execution.filters.TextConsoleBuilderFactory
+import com.intellij.openapi.ui.Messages
+import org.conilang.util.ConiExecutable
+import org.conilang.util.ConiDownloader
 
 class StartREPLAction : AnAction("Start Coni REPL") {
     override fun actionPerformed(e: AnActionEvent) {
         val project = e.project ?: return
         
-        val commandLine = com.intellij.execution.configurations.GeneralCommandLine("coni", "repl")
+        val coniExe = ConiExecutable.resolve(project)
+        val commandLine = com.intellij.execution.configurations.GeneralCommandLine(coniExe, "repl")
         commandLine.workDirectory = java.io.File(project.basePath ?: "/")
 
         try {
@@ -31,7 +35,17 @@ class StartREPLAction : AnAction("Start Coni REPL") {
 
             processHandler.startNotify()
         } catch (ex: Exception) {
-            ex.printStackTrace()
+            val res = Messages.showYesNoDialog(
+                project,
+                "Failed to execute Coni: ${ex.message}\n\nWould you like to download the Coni language server?",
+                "Execution Failed",
+                "Download",
+                "Cancel",
+                Messages.getErrorIcon()
+            )
+            if (res == Messages.YES) {
+                ConiDownloader.downloadBinary(project)
+            }
         }
     }
 }
